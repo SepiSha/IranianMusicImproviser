@@ -76,7 +76,7 @@ for i=1:length(tracklist)
     Msg{1,4} = 'name';
     Msg{1,5} = 'data';
     
-    %fprintf("midinfo: msglength=%d\n", length(midi.track(tracknum).messages))  %shapour
+    %fprintf("midinfo: msglength=%d\n", length(midi.track(tracknum).messages))  %sh
     for msgNum=1:length(midi.track(tracknum).messages)
         
         currMsg = midi.track(tracknum).messages(msgNum);
@@ -174,7 +174,7 @@ for i=1:length(tracklist)
             %val = data(1)+data(2)*256;
             %val = base2dec('2000',16) - val;
             
-            kk = bin2dec('1011 1111'); %kk=(bitcmp(64, 'uint8')) ; %shapour
+            kk = bin2dec('1011 1111'); %kk=(bitcmp(64, 'uint8')) ; %sh
             
             jj=data(2);
             %=bitand( jj,kk)
